@@ -1,0 +1,54 @@
+.h-lg {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: bold;
+    color: $color-primary;
+    @include mq('phone') {
+        font-size: 40px;
+    }
+}
+
+.h-md {
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: bold;
+    color: $color-secondary;
+    margin-bottom: 55px;
+    @include mq('phone') {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+.p-md {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+    color: $color-primary;
+    @include mq('phone') {
+        font-size: 14px;
+    }
+}
+
+.h2 {
+    margin-bottom: 14px;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: $color-secondary-light;
+}
+
+.p-lg {
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0;
+    color: $color-secondary;
+    font-weight: 400;
+}

@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    margin: 90px auto;
+    text-align: center;
+    max-width: 750px;
+    & ul {
+        @include flexcenter;
+        margin: 40px 0;
+        & a {
+            color: #464646;
+            line-height: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 700;
+            text-transform: uppercase;
+            @include mq('tablet') {
+                margin-top: 10px;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &.services a:nth-child(2) {
+            color: $color-pink;
+        }
+        &.socialMedia {
+            justify-content: center;
+            & a {
+                margin: 0 3px;
+            }
+        }
+        &.copyright li p,
+        &.copyright li a {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        &.copyright li:last-child a {
+            margin-left: 30px;
+        }
+        &.copyright li:last-child {
+            @include mq('tablet') {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+%btn {
+    padding: 15px;
+    border-radius: 4px;
+    max-height: 53px;
+    max-width: 193px;
+    width: 100%;
+    border: none;
+    outline: none;
+    // background-image: $color-shade;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400px;
+    transition: all 0.9s;
+    display: inline-block;
+    &:hover {
+        background-image: $color-shaderev;
+    }
+}
+
+.btn {
+    &-primary {
+        @extend %btn;
+        background-image: $color-shade;
+        color: $color-primary;
+    }
+    &-secondary {
+        @extend %btn;
+        background-color: $color-primary;
+        border: 1px solid #979797;
+        color: $color-secondary;
+    }
+}
